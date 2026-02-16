@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Watchtower Systems - local IT and security support for small businesses in Kankakee County, IL." />
+  <title>Watchtower Systems</title>
+  <link rel="icon" href="assets/watchtower-logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <span class="brand__name"><span class="brand__watch">Watchtower</span><span class="brand__systems">Systems</span></span>
+    </a>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#fixpack">Fix Pack</a>
+      <a href="#process">Process</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">Kankakee County, IL</p>
+          <h1>We solve technical problems for small businesses.</h1>
+          <p class="subhead">
+            Endpoint management, Microsoft 365 security, network reliability, and fast website fixes.
+            Practical improvements you can see, with clear scope and quick turnaround.
+          </p>
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="#contact">Get a quick quote</a>
+            <a class="btn btn--ghost" href="#fixpack">See the Fix Pack</a>
+          </div>
+          <p class="micro">Fast turnaround, clear scope, local support.</p>
+        </div>
+
+        <div class="hero__card" aria-label="Watchtower Systems">
+          <img class="hero__logo" src="assets/watchtower-logo.png" alt="Watchtower Systems" />
+          <div class="hero__metrics">
+            <div class="metric">
+              <div class="metric__k">Fast</div>
+              <div class="metric__v">quick triage and clear scope</div>
+            </div>
+            <div class="metric">
+              <div class="metric__k">Practical</div>
+              <div class="metric__v">fixes you can verify</div>
+            </div>
+            <div class="metric">
+              <div class="metric__k">Local</div>
+              <div class="metric__v">Kankakee County focused</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section__inner">
+        <h2>Services</h2>
+        <p class="lead">If it’s technical, we handle it. We start with triage, then we fix the root cause.</p>
+
+        <div class="grid">
+          <article class="tile">
+            <h3>Endpoint Management</h3>
+            <ul>
+              <li>Device onboarding and standardization</li>
+              <li>Patching, monitoring, and baseline hardening</li>
+              <li>Remote support and escalation</li>
+              <li>Visibility across laptops and desktops</li>
+            </ul>
+          </article>
+          <article class="tile">
+            <h3>IT Support and Security</h3>
+            <ul>
+              <li>Microsoft 365 security and account protection</li>
+              <li>Network and Wi-Fi reliability</li>
+              <li>Backup and recovery checks</li>
+              <li>Vendor coordination (ISP, VoIP, software)</li>
+            </ul>
+          </article>
+          <article class="tile">
+            <h3>Web and Operations</h3>
+            <ul>
+              <li>Website fixes, maintenance, and updates</li>
+              <li>Contact flow and lead capture cleanup</li>
+              <li>Directory listing consistency (phone/address/hours)</li>
+              <li>Lightweight automation and reporting</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="bullets">
+          <div class="bullets__head">
+            <div class="bullets__title">If it’s technical, we handle it</div>
+            <div class="bullets__sub">Common problems we resolve for local teams.</div>
+          </div>
+          <ul class="bullets__list">
+            <li><strong>Day-to-day fixes:</strong> slow computers, random errors, crashes, "it used to work" issues</li>
+            <li><strong>Email and access:</strong> password resets, lockouts, MFA issues, compromised account cleanup</li>
+            <li><strong>New hires:</strong> device setup, accounts, permissions, and baseline security</li>
+            <li><strong>Wi-Fi and network:</strong> dead zones, drops, router/AP tuning, ISP handoff problems</li>
+            <li><strong>Printers and peripherals:</strong> printers, scanners, line-of-business device quirks</li>
+            <li><strong>Backups:</strong> verify backups and prove restores work when needed</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="fixpack" class="section section--accent">
+      <div class="section__inner">
+        <h2>Rapid Fix Sprint</h2>
+        <p class="lead">A focused, short engagement to diagnose and resolve the highest-impact technical issues.</p>
+        <div class="split">
+          <div>
+            <h3>What it can cover</h3>
+            <ul class="check">
+              <li>Website issues (contact forms, mobile friction, HTTPS behavior)</li>
+              <li>Microsoft 365 problems (lockouts, MFA, compromised accounts)</li>
+              <li>Endpoint problems (slow machines, patching gaps, security baseline)</li>
+              <li>Network reliability (Wi-Fi issues, ISP handoff, outages)</li>
+              <li>Backup and recovery verification</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="price">Request a quote</div>
+            <div class="priceSub">We price based on scope and urgency. No surprise invoices.</div>
+            <div class="panel__cta">
+              <a class="btn btn--primary" href="#contact">Request a Fix Sprint</a>
+              <a class="btn btn--ghost" href="#process">How it works</a>
+            </div>
+            <p class="micro">If we can’t find anything actionable, we’ll tell you and won’t recommend unnecessary work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="section__inner">
+        <h2>Process</h2>
+        <div class="steps">
+          <div class="step"><span>1</span><div><strong>Triage</strong><p>We get context, reproduce the problem, and identify what matters most.</p></div></div>
+          <div class="step"><span>2</span><div><strong>Scope + quote</strong><p>You get a short plan with a clear scope, timeline, and price.</p></div></div>
+          <div class="step"><span>3</span><div><strong>Fix</strong><p>We implement the solution and document what changed.</p></div></div>
+          <div class="step"><span>4</span><div><strong>Stabilize</strong><p>Optional ongoing support: endpoint management, maintenance, monitoring, and follow-ups.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section__inner">
+        <h2>Contact</h2>
+        <p class="lead">Send your website URL and best callback number.</p>
+
+        <div class="contact">
+          <div class="contact__card">
+            <h3>Call or text</h3>
+            <p><a href="tel:+18152169370">(815) 216-9370</a></p>
+            <p class="micro">Fastest for quick questions and scheduling.</p>
+          </div>
+          <div class="contact__card">
+            <h3>Email</h3>
+            <p><a href="mailto:alex@watchtower-systems.com">alex@watchtower-systems.com</a></p>
+            <p class="micro">Send your URL and a short description of the issue.</p>
+          </div>
+          <div class="contact__card">
+            <h3>Service area</h3>
+            <p>Kankakee County, Illinois</p>
+            <p class="micro">Kankakee, Bourbonnais, Bradley, Manteno, and nearby.</p>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div>© <span id="y"></span> Watchtower Systems</div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Mouse-reactive background spotlight
+    const root = document.documentElement;
+    const setSpot = (x, y) => {
+      root.style.setProperty('--mx', x + '%');
+      root.style.setProperty('--my', y + '%');
+    };
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      setSpot(x.toFixed(2), y.toFixed(2));
+    }, { passive: true });
+
+    // Reasonable default for touch devices
+    window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
+  </script>
+</body>
+</html>
