@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Consultation | Watchtower Systems</title>
+  <meta name="description" content="Request a consultation. We triage the issue, define scope, fix the problem, and stabilize your setup. Serving businesses and individuals in Kankakee County, IL." />
+  <link rel="canonical" href="https://watchtower-systems.com/consultation/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://watchtower-systems.com/consultation/" />
+  <meta property="og:title" content="Consultation | Watchtower Systems" />
+  <meta property="og:description" content="Clear scope before work begins. Triage, fix, and stabilize." />
+  <link rel="icon" href="/assets/watchtower-logo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand__name"><span class="brand__watch">Watchtower</span><span class="brand__systems">Systems</span></span>
+    </a>
+    <nav class="nav">
+      <a href="/services/">Services</a>
+      <a href="/consultation/">Our Process</a>
+      <a href="/about/">About</a>
+      <a href="/contact/" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-top:34px">
+      <div class="hero__inner" style="grid-template-columns: 1fr;">
+        <div class="hero__copy">
+          <p class="eyebrow">Consultation</p>
+          <h1>Clear scope before work begins.</h1>
+          <p class="subhead">We start with triage and end with a stable fix. You get a plan, timeline, and pricing before billable work starts.</p>
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="/contact/">Request a consultation</a>
+            <a class="btn btn--ghost" href="/services/">Browse services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <h2>Process</h2>
+        <div class="steps">
+          <div class="step"><span>1</span><div><strong>Triage</strong><p>We gather context, reproduce the problem, and identify what matters most.</p></div></div>
+          <div class="step"><span>2</span><div><strong>Scope + quote</strong><p>You get a short plan with a clear scope, timeline, and price.</p></div></div>
+          <div class="step"><span>3</span><div><strong>Fix</strong><p>We implement the solution and document what changed.</p></div></div>
+          <div class="step"><span>4</span><div><strong>Stabilize</strong><p>Optional ongoing support so the issue does not come back.</p></div></div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>© <span id="y"></span> Watchtower Systems</div>
+        <div class="footer__meta">
+          <a href="/go/call/?to=%2B18152169370">(815) 216-9370</a> · <a href="/go/email/?to=alex%40watchtower-systems.com">alex@watchtower-systems.com</a> · Kankakee County, IL
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const root = document.documentElement;
+    const setSpot = (x, y) => { root.style.setProperty('--mx', x + '%'); root.style.setProperty('--my', y + '%'); };
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      setSpot(x.toFixed(2), y.toFixed(2));
+    }, { passive: true });
+    window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
+  </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Remote Endpoint Management | Watchtower Systems</title>
+  <meta name="description" content="Remote endpoint management for laptops and desktops. Onboarding, patching, monitoring, and baseline hardening for businesses and individuals in Kankakee County, IL." />
+
+  <link rel="canonical" href="https://watchtower-systems.com/services/endpoint-management/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://watchtower-systems.com/services/endpoint-management/" />
+  <meta property="og:title" content="Remote Endpoint Management | Watchtower Systems" />
+  <meta property="og:description" content="Remote endpoint management for laptops and desktops. Onboarding, patching, monitoring, and baseline hardening for businesses and individuals in Kankakee County, IL." />
+  <link rel="icon" href="/assets/watchtower-logo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand__name"><span class="brand__watch">Watchtower</span><span class="brand__systems">Systems</span></span>
+    </a>
+    <nav class="nav">
+      <a href="/services/">Services</a>
+      <a href="/consultation/">Our Process</a>
+      <a href="/about/">About</a>
+      <a href="/contact/" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-top:34px">
+      <div class="hero__inner" style="grid-template-columns: 1fr;">
+        <div class="hero__copy">
+          <p class="eyebrow"><a href="/services/">Services</a> / Endpoint Management</p>
+          <h1>Remote Endpoint Management</h1>
+          <p class="subhead">Keep devices patched, stable, and consistent. We reduce surprises by standardizing setup and closing the obvious gaps.</p>
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="/contact/">Request a consultation</a>
+            <a class="btn btn--ghost" href="/services/">Back to services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <h2>What’s included (typical)</h2>
+        <div class="grid">
+          <article class="tile"><h3>Onboarding</h3><ul><li>New device setup and baseline configuration</li><li>Standard apps and settings</li><li>Access checks</li></ul></article>
+          <article class="tile"><h3>Patching</h3><ul><li>OS updates and third-party patching plan</li><li>Schedule aligned to business hours</li><li>Post-patch verification</li></ul></article>
+          <article class="tile"><h3>Monitoring</h3><ul><li>Basic health signals</li><li>Early warning on common failure modes</li><li>Actionable recommendations</li></ul></article>
+        </div>
+
+        <div class="bullets">
+          <div class="bullets__head">
+            <div class="bullets__title">Good fit for</div>
+            <div class="bullets__sub">Any team or individual who wants fewer surprises and faster resolution.</div>
+          </div>
+          <ul class="bullets__list">
+            <li><strong>Small offices:</strong> multiple laptops/desktops with no internal IT</li>
+            <li><strong>Owners:</strong> one critical machine that cannot be down</li>
+            <li><strong>Growth:</strong> onboarding new hires and keeping access consistent</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>What is endpoint management?</summary>
+            <div class="faq__body">It’s the process of keeping devices patched, monitored, and configured consistently so problems happen less often and are faster to fix.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Do you support both Windows and Mac?</summary>
+            <div class="faq__body">Yes. Support depends on device type and the tools involved. We’ll confirm scope during triage.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Is this for businesses only?</summary>
+            <div class="faq__body">No. Individuals with one critical machine can also benefit from consistent patching and baseline security.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>© <span id="y"></span> Watchtower Systems</div>
+        <div class="footer__meta">
+          <a href="/go/call/?to=%2B18152169370">(815) 216-9370</a> · <a href="/go/email/?to=alex%40watchtower-systems.com">alex@watchtower-systems.com</a> · Kankakee County, IL
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const root = document.documentElement;
+    const setSpot = (x, y) => { root.style.setProperty('--mx', x + '%'); root.style.setProperty('--my', y + '%'); };
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      setSpot(x.toFixed(2), y.toFixed(2));
+    }, { passive: true });
+    window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
+  </script>
+</body>
+</html>

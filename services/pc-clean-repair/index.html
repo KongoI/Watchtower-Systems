@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PC Clean and Repair | Watchtower Systems</title>
+  <meta name="description" content="PC clean and repair for businesses and individuals in Kankakee County, IL. Performance cleanup, stability fixes, and practical tune-ups." />
+
+  <link rel="canonical" href="https://watchtower-systems.com/services/pc-clean-repair/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://watchtower-systems.com/services/pc-clean-repair/" />
+  <meta property="og:title" content="PC Clean and Repair | Watchtower Systems" />
+  <meta property="og:description" content="PC clean and repair for businesses and individuals in Kankakee County, IL. Performance cleanup, stability fixes, and practical tune-ups." />
+  <link rel="icon" href="/assets/watchtower-logo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand__name"><span class="brand__watch">Watchtower</span><span class="brand__systems">Systems</span></span>
+    </a>
+    <nav class="nav">
+      <a href="/services/">Services</a>
+      <a href="/consultation/">Our Process</a>
+      <a href="/about/">About</a>
+      <a href="/contact/" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-top:34px">
+      <div class="hero__inner" style="grid-template-columns: 1fr;">
+        <div class="hero__copy">
+          <p class="eyebrow"><a href="/services/">Services</a> / PC Clean and Repair</p>
+          <h1>PC Clean and Repair</h1>
+          <p class="subhead">Fix slow machines, crashes, and weird errors. We prioritize stability and a clean, maintainable setup.</p>
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="/contact/">Request a consultation</a>
+            <a class="btn btn--ghost" href="/services/">Back to services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <h2>Common work</h2>
+        <div class="grid">
+          <article class="tile"><h3>Performance cleanup</h3><ul><li>Startup and bloat removal</li><li>Storage and OS health checks</li><li>Update and driver cleanup</li></ul></article>
+          <article class="tile"><h3>Stability</h3><ul><li>Crash and error troubleshooting</li><li>Hardware checks (best-effort)</li><li>Data protection guidance</li></ul></article>
+          <article class="tile"><h3>Practical tune-ups</h3><ul><li>Browser and security cleanup</li><li>Account and login issues</li><li>Recommendations you can act on</li></ul></article>
+        </div>
+
+        <div class="bullets">
+          <div class="bullets__head">
+            <div class="bullets__title">Good fit for</div>
+            <div class="bullets__sub">Both individual machines and small office fleets.</div>
+          </div>
+          <ul class="bullets__list">
+            <li><strong>Individuals:</strong> one device, clear explanation, fast turnaround</li>
+            <li><strong>Businesses:</strong> reduce repeat issues and downtime</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Do you do virus or malware cleanup?</summary>
+            <div class="faq__body">Yes. We can assess and clean up common malware issues and tighten basic settings to prevent repeat problems.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Can you help with a very slow PC?</summary>
+            <div class="faq__body">Yes. We diagnose the cause (storage, updates, bloat, hardware limits) and recommend the most cost-effective fix.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Do you work on business computers too?</summary>
+            <div class="faq__body">Yes. We support both business and personal machines, depending on scope and urgency.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>© <span id="y"></span> Watchtower Systems</div>
+        <div class="footer__meta">
+          <a href="/go/call/?to=%2B18152169370">(815) 216-9370</a> · <a href="/go/email/?to=alex%40watchtower-systems.com">alex@watchtower-systems.com</a> · Kankakee County, IL
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const root = document.documentElement;
+    const setSpot = (x, y) => { root.style.setProperty('--mx', x + '%'); root.style.setProperty('--my', y + '%'); };
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      setSpot(x.toFixed(2), y.toFixed(2));
+    }, { passive: true });
+    window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
+  </script>
+</body>
+</html>

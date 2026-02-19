@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Networking | Watchtower Systems</title>
+  <meta name="description" content="Networking and Wi-Fi reliability for businesses and individuals in Kankakee County, IL. Dead zones, drops, router/AP setup, and stability troubleshooting." />
+
+  <link rel="canonical" href="https://watchtower-systems.com/services/networking/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://watchtower-systems.com/services/networking/" />
+  <meta property="og:title" content="Networking | Watchtower Systems" />
+  <meta property="og:description" content="Networking and Wi-Fi reliability for businesses and individuals in Kankakee County, IL. Dead zones, drops, router/AP setup, and stability troubleshooting." />
+  <link rel="icon" href="/assets/watchtower-logo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand__name"><span class="brand__watch">Watchtower</span><span class="brand__systems">Systems</span></span>
+    </a>
+    <nav class="nav">
+      <a href="/services/">Services</a>
+      <a href="/consultation/">Our Process</a>
+      <a href="/about/">About</a>
+      <a href="/contact/" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-top:34px">
+      <div class="hero__inner" style="grid-template-columns: 1fr;">
+        <div class="hero__copy">
+          <p class="eyebrow"><a href="/services/">Services</a> / Networking</p>
+          <h1>Networking and Wi-Fi Reliability</h1>
+          <p class="subhead">Stop drops, dead zones, and mystery outages. We diagnose the real cause and stabilize the network.</p>
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="/contact/">Request a consultation</a>
+            <a class="btn btn--ghost" href="/services/">Back to services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <h2>Common work</h2>
+        <div class="grid">
+          <article class="tile"><h3>Coverage</h3><ul><li>Wi-Fi dead zone remediation</li><li>AP placement and tuning</li><li>Roaming stability</li></ul></article>
+          <article class="tile"><h3>Stability</h3><ul><li>Drop troubleshooting</li><li>Router/AP configuration cleanup</li><li>Simple diagnostics and next steps</li></ul></article>
+          <article class="tile"><h3>Basics</h3><ul><li>Router/AP setup</li><li>Simple segmentation guidance</li><li>Documentation of what’s installed</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Do you handle Wi-Fi dead zones?</summary>
+            <div class="faq__body">Yes. We diagnose coverage and configuration issues and recommend the simplest fix that actually holds up.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Do you call my ISP for me?</summary>
+            <div class="faq__body">No. We’ll diagnose what we can on your side and prepare you with a clear checklist and the right questions to ask your ISP.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Do you do home networks too?</summary>
+            <div class="faq__body">Yes. Individuals and families often need stable Wi-Fi as much as offices do.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>© <span id="y"></span> Watchtower Systems</div>
+        <div class="footer__meta">
+          <a href="/go/call/?to=%2B18152169370">(815) 216-9370</a> · <a href="/go/email/?to=alex%40watchtower-systems.com">alex@watchtower-systems.com</a> · Kankakee County, IL
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const root = document.documentElement;
+    const setSpot = (x, y) => { root.style.setProperty('--mx', x + '%'); root.style.setProperty('--my', y + '%'); };
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      setSpot(x.toFixed(2), y.toFixed(2));
+    }, { passive: true });
+    window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
+  </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services | Watchtower Systems</title>
+  <meta name="description" content="Remote endpoint management, website fixes, networking, PC repair, and security + backups for businesses and individuals in Kankakee County, IL." />
+  <link rel="canonical" href="https://watchtower-systems.com/services/" />
+  <meta property="og:title" content="Services | Watchtower Systems" />
+  <meta property="og:description" content="Technical problem solving for businesses and individuals in Kankakee County, IL." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://watchtower-systems.com/services/" />
+  <link rel="icon" href="/assets/watchtower-logo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand__name"><span class="brand__watch">Watchtower</span><span class="brand__systems">Systems</span></span>
+    </a>
+    <nav class="nav">
+      <a href="/services/">Services</a>
+      <a href="/consultation/">Our Process</a>
+      <a href="/about/">About</a>
+      <a href="/contact/" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-top:34px">
+      <div class="hero__inner" style="grid-template-columns: 1fr;">
+        <div class="hero__copy">
+          <p class="eyebrow">Services</p>
+          <h1>Technical support for businesses and individuals.</h1>
+          <p class="subhead">We start with triage, then we fix the root cause. Clear scope, clean communication, and results you can verify.</p>
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="/contact/">Request a consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="section__inner">
+        <h2>What we do</h2>
+        <div class="grid">
+          <article class="tile">
+            <h3><a href="/services/endpoint-management/">Remote Endpoint Management</a></h3>
+            <ul>
+              <li>Onboarding, patching, monitoring</li>
+              <li>Baseline hardening</li>
+              <li>Visibility across devices</li>
+            </ul>
+          </article>
+          <article class="tile">
+            <h3><a href="/services/website-fixes/">Website Fixes</a></h3>
+            <ul>
+              <li>Contact forms and lead flow</li>
+              <li>Mobile usability</li>
+              <li>HTTPS behavior and trust fixes</li>
+            </ul>
+          </article>
+          <article class="tile">
+            <h3><a href="/services/networking/">Networking</a></h3>
+            <ul>
+              <li>Wi-Fi stability and coverage</li>
+              <li>Router/AP setup</li>
+              <li>Reliability troubleshooting</li>
+            </ul>
+          </article>
+          <article class="tile">
+            <h3><a href="/services/pc-clean-repair/">PC Clean and Repair</a></h3>
+            <ul>
+              <li>Performance cleanup</li>
+              <li>Fix crashes and odd errors</li>
+              <li>Basic tune-ups and stability</li>
+            </ul>
+          </article>
+          <article class="tile">
+            <h3><a href="/services/security-backups/">Security + Backups</a></h3>
+            <ul>
+              <li>Backup verification</li>
+              <li>Account protection guidance</li>
+              <li>Basic ransomware readiness</li>
+            </ul>
+          </article>
+          <article class="tile">
+            <h3><a href="/contact/">Request a consultation</a></h3>
+            <ul>
+              <li>One-off problem solving</li>
+              <li>Ongoing support options</li>
+              <li>Plain-language recommendations</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>© <span id="y"></span> Watchtower Systems</div>
+        <div class="footer__meta">
+          <a href="/go/call/?to=%2B18152169370">(815) 216-9370</a> · <a href="/go/email/?to=alex%40watchtower-systems.com">alex@watchtower-systems.com</a> · Kankakee County, IL
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const root = document.documentElement;
+    const setSpot = (x, y) => { root.style.setProperty('--mx', x + '%'); root.style.setProperty('--my', y + '%'); };
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      setSpot(x.toFixed(2), y.toFixed(2));
+    }, { passive: true });
+    window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
+  </script>
+</body>
+</html>
