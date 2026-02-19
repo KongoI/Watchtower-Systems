@@ -105,17 +105,6 @@
     ]
   }
   </script>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-    const root = document.documentElement;
-    const setSpot = (x, y) => { root.style.setProperty('--mx', x + '%'); root.style.setProperty('--my', y + '%'); };
-    window.addEventListener('mousemove', (e) => {
-      const x = (e.clientX / window.innerWidth) * 100;
-      const y = (e.clientY / window.innerHeight) * 100;
-      setSpot(x.toFixed(2), y.toFixed(2));
-    }, { passive: true });
-    window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
-  </script>
+  <script src="/assets/site.js" defer></script>
 </body>
 </html>
