@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://watchtower-systems.com/sitemap.xml

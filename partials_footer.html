@@ -1,0 +1,20 @@
+<!-- partial: footer (copy into pages) -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div>© <span id="y"></span> Watchtower Systems</div>
+    <div class="footer__meta">
+      <a href="/go/call/?to=%2B18152169370">(815) 216-9370</a> · <a href="/go/email/?to=alex%40watchtower-systems.com">alex@watchtower-systems.com</a> · Kankakee County, IL
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  const root = document.documentElement;
+  const setSpot = (x, y) => { root.style.setProperty('--mx', x + '%'); root.style.setProperty('--my', y + '%'); };
+  window.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth) * 100;
+    const y = (e.clientY / window.innerHeight) * 100;
+    setSpot(x.toFixed(2), y.toFixed(2));
+  }, { passive: true });
+  window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
+</script>

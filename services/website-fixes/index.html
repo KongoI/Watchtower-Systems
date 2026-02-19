@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Website Fixes | Watchtower Systems</title>
+  <meta name="description" content="Website fixes and maintenance for businesses and individuals in Kankakee County, IL. Contact forms, mobile usability, HTTPS behavior, and trust improvements." />
+
+  <link rel="canonical" href="https://watchtower-systems.com/services/website-fixes/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://watchtower-systems.com/services/website-fixes/" />
+  <meta property="og:title" content="Website Fixes | Watchtower Systems" />
+  <meta property="og:description" content="Website fixes and maintenance for businesses and individuals in Kankakee County, IL. Contact forms, mobile usability, HTTPS behavior, and trust improvements." />
+  <link rel="icon" href="/assets/watchtower-logo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand__name"><span class="brand__watch">Watchtower</span><span class="brand__systems">Systems</span></span>
+    </a>
+    <nav class="nav">
+      <a href="/services/">Services</a>
+      <a href="/consultation/">Our Process</a>
+      <a href="/about/">About</a>
+      <a href="/contact/" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-top:34px">
+      <div class="hero__inner" style="grid-template-columns: 1fr;">
+        <div class="hero__copy">
+          <p class="eyebrow"><a href="/services/">Services</a> / Website Fixes</p>
+          <h1>Website Fixes and Maintenance</h1>
+          <p class="subhead">We fix what’s broken, remove friction, and keep the basics tight: contact flow, mobile usability, and trust signals.</p>
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="/contact/">Request a consultation</a>
+            <a class="btn btn--ghost" href="/services/">Back to services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <h2>Common fixes</h2>
+        <div class="grid">
+          <article class="tile"><h3>Contact issues</h3><ul><li>Broken forms</li><li>Tap-to-call and lead capture</li><li>Wrong phone/address across the site</li></ul></article>
+          <article class="tile"><h3>Mobile usability</h3><ul><li>Navigation and readability</li><li>Layout glitches</li><li>Speed and bloat cleanup</li></ul></article>
+          <article class="tile"><h3>Trust signals</h3><ul><li>HTTPS behavior and redirects</li><li>Basic hardening headers</li><li>Broken pages and outdated content</li></ul></article>
+        </div>
+
+        <div class="bullets">
+          <div class="bullets__head">
+            <div class="bullets__title">Good fit for</div>
+            <div class="bullets__sub">Anyone whose site exists but is not pulling its weight.</div>
+          </div>
+          <ul class="bullets__list">
+            <li><strong>Trades:</strong> missed calls due to mobile friction</li>
+            <li><strong>Professional services:</strong> trust and credibility improvements</li>
+            <li><strong>Individuals:</strong> personal sites that need stability and cleanup</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Do you do full redesigns?</summary>
+            <div class="faq__body">We focus on fixes and improvements first. If a redesign is actually needed, we’ll recommend it with a clear scope.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Can you fix contact forms and missed leads?</summary>
+            <div class="faq__body">Yes. We verify your contact flow end-to-end and fix the obvious failure points.</div>
+          </details>
+          <details class="faq__item">
+            <summary>Do you support WordPress?</summary>
+            <div class="faq__body">Yes. We can work with common platforms. Scope depends on current access and hosting setup.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>© <span id="y"></span> Watchtower Systems</div>
+        <div class="footer__meta">
+          <a href="/go/call/?to=%2B18152169370">(815) 216-9370</a> · <a href="/go/email/?to=alex%40watchtower-systems.com">alex@watchtower-systems.com</a> · Kankakee County, IL
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const root = document.documentElement;
+    const setSpot = (x, y) => { root.style.setProperty('--mx', x + '%'); root.style.setProperty('--my', y + '%'); };
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      setSpot(x.toFixed(2), y.toFixed(2));
+    }, { passive: true });
+    window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
+  </script>
+</body>
+</html>

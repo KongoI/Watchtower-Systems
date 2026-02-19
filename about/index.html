@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | Watchtower Systems</title>
+  <meta name="description" content="Watchtower Systems is a local technical problem-solving and IT consulting service for businesses and individuals in Kankakee County, IL." />
+
+  <link rel="canonical" href="https://watchtower-systems.com/about/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://watchtower-systems.com/about/" />
+  <meta property="og:title" content="About | Watchtower Systems" />
+  <meta property="og:description" content="Watchtower Systems is a local technical problem-solving and IT consulting service for businesses and individuals in Kankakee County, IL." />
+  <link rel="icon" href="/assets/watchtower-logo.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand__name"><span class="brand__watch">Watchtower</span><span class="brand__systems">Systems</span></span>
+    </a>
+    <nav class="nav">
+      <a href="/services/">Services</a>
+      <a href="/consultation/">Our Process</a>
+      <a href="/about/">About</a>
+      <a href="/contact/" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="padding-top:34px">
+      <div class="hero__inner" style="grid-template-columns: 1fr;">
+        <div class="hero__copy">
+          <p class="eyebrow">About</p>
+          <h1>Local, practical technical support.</h1>
+          <p class="subhead">Watchtower Systems helps businesses and individuals in Kankakee County solve technical problems without confusion, delays, or vague promises.</p>
+          <div class="ctaRow">
+            <a class="btn btn--primary" href="/contact/">Contact</a>
+            <a class="btn btn--ghost" href="/services/">View services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <h2>Our Process</h2>
+        <p class="lead">See our consultation workflow: triage, scope, fix, stabilize.</p>
+        <div class="ctaRow">
+          <a class="btn btn--primary" href="/consultation/">Our Process</a>
+          <a class="btn btn--ghost" href="/contact/">Contact</a>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div>© <span id="y"></span> Watchtower Systems</div>
+        <div class="footer__meta">
+          <a href="/go/call/?to=%2B18152169370">(815) 216-9370</a> · <a href="/go/email/?to=alex%40watchtower-systems.com">alex@watchtower-systems.com</a> · Kankakee County, IL
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const root = document.documentElement;
+    const setSpot = (x, y) => { root.style.setProperty('--mx', x + '%'); root.style.setProperty('--my', y + '%'); };
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth) * 100;
+      const y = (e.clientY / window.innerHeight) * 100;
+      setSpot(x.toFixed(2), y.toFixed(2));
+    }, { passive: true });
+    window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
+  </script>
+</body>
+</html>
