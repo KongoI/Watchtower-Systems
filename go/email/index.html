@@ -45,28 +45,6 @@
       </div>
     </footer>
   </main>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    const params = new URLSearchParams(location.search);
-    const to = params.get('to') || 'alex@watchtower-systems.com';
-    const subject = params.get('subject') || '';
-    const body = params.get('body') || '';
-
-    const mailHref = 'mailto:' + to + (subject || body ? ('?'+new URLSearchParams({subject, body}).toString()) : '');
-
-    const a = document.getElementById('fallback');
-    a.href = mailHref;
-
-    try {
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'conversion', { send_to: window.WATCHTOWER_GOOGLE_ADS_SEND_TO || undefined });
-        window.gtag('event', 'email_click', { value: 1, email: to });
-      }
-    } catch (e) {}
-
-    setTimeout(() => { window.location.href = mailHref; }, 250);
-  </script>
+  <script src="/assets/site.js" defer></script>
 </body>
 </html>
