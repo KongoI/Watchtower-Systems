@@ -11,6 +11,10 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://watchtower-systems.com/" />
   <link rel="icon" href="assets/watchtower-logo.png" />
+  <link rel="preload" as="image"
+  href="/assets/watchtower-logo-595.webp"
+  imagesrcset="/assets/watchtower-logo-595.webp 595w, /assets/watchtower-logo-1213.webp 1213w"
+  imagesizes="(max-width: 920px) 90vw, 595px" />
   <link rel="preload" href="/styles.css" as="style" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
@@ -45,7 +49,16 @@
         </div>
 
         <div class="hero__card" aria-label="Watchtower Systems">
-          <img class="hero__logo" src="assets/watchtower-logo.png" alt="Watchtower Systems" />
+          <picture>
+            <source type="image/webp"
+              srcset="/assets/watchtower-logo-595.webp 595w, /assets/watchtower-logo-1213.webp 1213w"
+              sizes="(max-width: 920px) 90vw, 595px" />
+            <img class="hero__logo"
+              src="/assets/watchtower-logo-595.webp"
+              width="595" height="293"
+              fetchpriority="high"
+              alt="Watchtower Systems" />
+          </picture>
           <div class="hero__metrics">
             <div class="metric">
               <div class="metric__k">Fast</div>
