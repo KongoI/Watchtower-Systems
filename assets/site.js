@@ -10,15 +10,19 @@
     root.style.setProperty('--my', y + '%');
   };
 
-  window.addEventListener(
-    'mousemove',
-    (e) => {
-      const x = (e.clientX / window.innerWidth) * 100;
-      const y = (e.clientY / window.innerHeight) * 100;
-      setSpot(x.toFixed(2), y.toFixed(2));
-    },
-    { passive: true }
-  );
+  const finePointer = window.matchMedia && window.matchMedia('(pointer: fine)').matches;
+
+  if (finePointer) {
+    window.addEventListener(
+      'mousemove',
+      (e) => {
+        const x = (e.clientX / window.innerWidth) * 100;
+        const y = (e.clientY / window.innerHeight) * 100;
+        setSpot(x.toFixed(2), y.toFixed(2));
+      },
+      { passive: true }
+    );
+  }
 
   window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
 
