@@ -68,9 +68,11 @@ a:hover{text-decoration:underline}
 }
 
 .brand{display:flex; align-items:center; gap:10px}
-.brand__name{font-weight:850; letter-spacing:.2px}
-.brand__watch{color: var(--purple)}
-.brand__systems{background: linear-gradient(90deg, var(--blue), rgba(var(--blue-rgb), .85)); -webkit-background-clip:text; background-clip:text; color:transparent; margin-left:2px}
+/* Use width-based sizing so the wordmark stays legible */
+.brand__wordmark{width:260px; height:auto; display:block}
+@media (max-width: 900px){
+  .brand__wordmark{width:220px}
+}
 
 .nav{display:flex; gap:16px; align-items:center}
 .nav a{color:var(--muted); font-weight:650; font-size:14px}
@@ -214,5 +216,4 @@ body:hover .panel:before{opacity:.40}
   .steps{grid-template-columns:1fr}
   .contact{grid-template-columns:1fr}
   .nav{gap:12px}
-  .brand__name{display:none}
 }
