@@ -28,15 +28,39 @@
 
   // Mobile nav toggle
   const toggles = document.querySelectorAll('.navToggle');
+  const closeNav = (topbar) => {
+    if (!topbar) return;
+    if (!topbar.classList.contains('is-open')) return;
+    const btn = topbar.querySelector('.navToggle');
+    const nav = topbar.querySelector('[data-nav]');
+    topbar.classList.remove('is-open');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+    if (nav) nav.setAttribute('data-open', 'false');
+  };
+
   toggles.forEach((btn) => {
     const topbar = btn.closest('.topbar');
     if (!topbar) return;
     const nav = topbar.querySelector('[data-nav]');
-    btn.addEventListener('click', () => {
-      const isOpen = topbar.classList.toggle('is-open');
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = !topbar.classList.contains('is-open');
+      if (isOpen) {
+        topbar.classList.add('is-open');
+      } else {
+        topbar.classList.remove('is-open');
+      }
       btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       if (nav) nav.setAttribute('data-open', isOpen ? 'true' : 'false');
     });
+  });
+
+  // Close mobile nav when tapping outside
+  document.addEventListener('click', (e) => {
+    const topbar = e.target.closest('.topbar');
+    if (topbar) return; // clicks inside header handled by toggle
+    const openTopbars = document.querySelectorAll('.topbar.is-open');
+    openTopbars.forEach((tb) => closeNav(tb));
   });
 
   // /go/call and /go/email helpers.
