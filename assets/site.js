@@ -26,6 +26,19 @@
 
   window.addEventListener('touchstart', () => setSpot(50, 20), { passive: true, once: true });
 
+  // Mobile nav toggle
+  const toggles = document.querySelectorAll('.navToggle');
+  toggles.forEach((btn) => {
+    const topbar = btn.closest('.topbar');
+    if (!topbar) return;
+    const nav = topbar.querySelector('[data-nav]');
+    btn.addEventListener('click', () => {
+      const isOpen = topbar.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (nav) nav.setAttribute('data-open', isOpen ? 'true' : 'false');
+    });
+  });
+
   // /go/call and /go/email helpers.
   // Keeps pages static while still performing tel: / mailto: redirects.
   try {
